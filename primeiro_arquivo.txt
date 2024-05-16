@@ -1,4 +1,0 @@
-GIT STATUS
-GIT ADD * ou . ou nome_do_arquivo
-GIT COMMIT -m "Meu primeiro commit"
-GIT PUSH
