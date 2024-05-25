@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+#seq{
+    margin-top: 25px;
+    color: pink;
+}
+
+.firstClass{
+    color: white;
+    margin: 150px;
+}
+
