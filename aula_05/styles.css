@@ -1,0 +1,46 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #454d6b;
+}
+
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card{
+    background-color: rgba(19, 19, 19, 0.3);
+    padding: 40px;
+    border-radius: 20px;
+    width: 280px;
+}
+
+.card-header{
+    padding-bottom: 50px;
+    color: #FFF;
+}
+
+.card-content label{
+    color: #FFF;    
+    font-size: 12px;
+}
+
+.card-content input{
+    margin-top: 10px;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #E1E1E1;
+    outline: none;
+}
+
+
+.card-content-area{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
