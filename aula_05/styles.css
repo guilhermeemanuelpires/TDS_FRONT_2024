@@ -38,9 +38,33 @@ body{
     outline: none;
 }
 
-
 .card-content-area{
     display: flex;
     flex-direction: column;
     padding: 10px 0px;
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer .submit{
+    width: 100%;
+    height: 40px;
+    background-color: #a13854;
+    border: none;
+    color: #E1E1E1;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+.card-footer a{
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    color: #FFF;
+    text-decoration: none;
+    margin-top: 10px;
 }
