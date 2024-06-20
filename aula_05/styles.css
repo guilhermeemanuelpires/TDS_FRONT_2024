@@ -38,6 +38,11 @@ body{
     outline: none;
 }
 
+.card-content-area input{
+    color: #FFF;
+    font-size: 12px;
+}
+
 .card-content-area{
     display: flex;
     flex-direction: column;
@@ -57,6 +62,7 @@ body{
     color: #E1E1E1;
     text-transform: uppercase;
     margin: 10px 0px;
+    cursor: pointer;
 }
 
 .card-footer a{
