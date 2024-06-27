@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Js</title>
+</head>
+
+<body>
+    <p>Aula Javascript</p>
+    <input type="text" name="" id="">
+    <button>Salvar</button>
+    <ul>
+        <li>item</li>
+    </ul>
+
+    <script>
+        // Declarando uma variavel do tipo String
+        var nome = "Guilherme";
+        var calculo = 1 + 2.5;
+        var lista = [1, 2, 3, 4, 5];
+        var matriz = [[1], [1]]
+        var guilherme = {
+            nome: "Guilherme",
+            idade: 26
+        };
+
+        // console.log('Valor: ', nome, ' Tipo: ', typeof nome);
+        // console.log('Valor: ', calculo, ' Tipo: ', typeof calculo);
+        // console.log('Valor: ', lista, ' Tipo: ', typeof lista);
+        // console.log('Valor: ', matriz, ' Tipo: ', typeof matriz);
+
+
+        var pessoas = [
+            // guilherme,
+            {
+                nome: "Gabrielle",
+                idade: 24,
+                email: "gabi@gmil.com"
+            },
+            {
+                nome: "Ricardo",
+                idade: 73,
+                email: "ricardo@gmil.com"
+            },
+            {
+                nome: "Diego",
+                idade: 24,
+                email: "diego@gmil.com"
+            },
+            {
+                nome: "Leonardo",
+                idade: 25,
+                email: "leonardo@gmil.com"
+            },
+            {
+                nome: "Thiago",
+                idade: 29,
+                email: "thiago@gmil.com"
+            },
+            {
+                nome: "Guilherme Isotton",
+                idade: 16,
+                email: "guilherme.isotton@gmil.com"
+            },
+            {
+                nome: "Bruno",
+                idade: 17,
+                email: "bruno@gmil.com"
+            },
+            {
+                nome: "Thiago Mazaroli",
+                idade: 13,
+                email: "thiago.mazaroli@gmil.com"
+            },
+            {
+                nome: "Pedro",
+                idade: 12,
+                email: "pedro@gmil.com"
+            }
+        ];
+        // console.log(pessoas[1]);
+
+        for (var cont = 0; cont < pessoas.length; cont++) {
+
+            // console.log(cont);
+            if (pessoas[cont].email == undefined) {
+                console.log(`O ${pessoas[cont].nome} não tem e-mail configurado!`);
+            } else {
+                console.log(pessoas[cont].email)
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
