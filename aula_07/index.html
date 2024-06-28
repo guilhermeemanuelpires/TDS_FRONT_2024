@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <p>Javascript</p>
+
+    <ul id="lista">
+
+    </ul>
+
+
+    <script>
+        const thiago = {
+            nome: "Thiago Araujo",
+            ra: "1146443"
+        }
+        const bruno = {
+            nome: "Bruno",
+            ra: "2847378"
+        }
+        const pedro = {
+            nome: "Pedro",
+            ra: "3657856"
+        }
+        const diovana = {
+            nome: "Diovana",
+            ra: "3570953"
+        }
+
+        const ptofessore = [
+            {
+                nome: "",
+                alunos: [{
+                    nome
+                }]
+            }
+        ]
+        // const alunos = [thiago, bruno, pedro, diovana];
+
+        // console.log(alunos); 
+
+        var alunos = [];
+
+        alunos.push(thiago);
+        alunos.push(bruno);
+        alunos.push(diovana);
+        alunos.push({ nome: "Ricardo", ra: "734850" });
+
+        //Exemplo do for
+        // for (let index = 0; index < alunos.length; index++) {
+        //     console.log(alunos[index]);
+        // }
+
+        //Exemplo for moderno array.forEach()
+        // alunos.forEach(function (item, index) {
+        //     console.log(index, item);
+        // });
+        // const minhaLista = document.getElementById("lista");
+        //Exemplo arrow function ()=>{}
+
+        alunos.forEach((item) => {
+            console.log(item);
+        });
+
+        
+    </script>
+</body>
+
+</html>
