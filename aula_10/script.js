@@ -44,16 +44,14 @@ function valida_tabuleiro(valor) {
         tabuleiro[5].innerHTML == valor &&
         tabuleiro[8].innerHTML == valor) {
         console.log("Fechou coluna 3");
-    } else
-
-        if (tabuleiro[0].innerHTML == valor &&
-            tabuleiro[4].innerHTML == valor &&
-            tabuleiro[8].innerHTML == valor) {
-            console.log("Fechou diagonal 1");
-        } else if (tabuleiro[2].innerHTML == valor &&
-            tabuleiro[4].innerHTML == valor &&
-            tabuleiro[6].innerHTML == valor) {
-            console.log("Fechou diagonal 2");
-        }
+    } else if(tabuleiro[0].innerHTML == valor &&
+        tabuleiro[4].innerHTML == valor &&
+        tabuleiro[8].innerHTML == valor) {
+        console.log("Fechou diagonal 1");
+    } else if (tabuleiro[2].innerHTML == valor &&
+        tabuleiro[4].innerHTML == valor &&
+        tabuleiro[6].innerHTML == valor) {
+        console.log("Fechou diagonal 2");
+    }
 
 } 
