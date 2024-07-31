@@ -1,12 +1,15 @@
 const tabuleiro = document.getElementsByClassName("campo");
 const resultado = document.getElementById("resultado");
-const resultado_x = document.getElementById("resultado_x"); 
-const resultado_o = document.getElementById("resultado_o")
+const resultado_x = document.getElementById("resultado_x");
+const resultado_o = document.getElementById("resultado_o");
+const empate = document.getElementById("empate");
+const jogador_atual = document.getElementById("jogador_atual");
 
 var ultimo_valor_clicado = "";
 var block_game = false;
 var vitoriaX = 0;
 var vitoriaO = 0;
+var cont_empate = 0;
 
 function marcar(posicao) {
 
@@ -14,9 +17,11 @@ function marcar(posicao) {
         if (ultimo_valor_clicado == "O") {
             tabuleiro[posicao].innerHTML = "O"
             ultimo_valor_clicado = "X";
+            jogador_atual.innerHTML = "JOGADOR ATUAL: X";
         } else {
             tabuleiro[posicao].innerHTML = "X"
             ultimo_valor_clicado = "O";
+            jogador_atual.innerHTML = "JOGADOR ATUAL: O";
         }
 
         // VALIDADORES
@@ -24,15 +29,16 @@ function marcar(posicao) {
             if (ultimo_valor_clicado == "X") {
                 resultado.innerHTML = "O ganhador Foi O";
                 vitoriaO++;
-                resultado_o.innerHTML = "O: " + vitoriaO;                
+                resultado_o.innerHTML = "O: " + vitoriaO;
             } else {
                 resultado.innerHTML = "O ganhador Foi X";
                 vitoriaX++;
                 resultado_x.innerHTML = "X: " + vitoriaX;
             }
             block_game = true;
-        }else{
-            console.log("EMPATE");
+        } else if (valida_empates()) {
+            cont_empate++;
+            empate.innerHTML = "EMPATES: " + cont_empate;
         }
 
     }
@@ -79,7 +85,11 @@ function valida_tabuleiro(valor) {
         tabuleiro[6].innerHTML == valor) {
         console.log("Fechou diagonal 2, e ganhador é: ", valor);
         return true;
-    } else if (
+    }
+}
+
+function valida_empates() {
+    if (
         tabuleiro[0].innerHTML !== "" &&
         tabuleiro[1].innerHTML !== "" &&
         tabuleiro[2].innerHTML !== "" &&
@@ -91,6 +101,8 @@ function valida_tabuleiro(valor) {
         tabuleiro[8].innerHTML !== ""
     ) {
         console.log("EMPATE");
+        return true;
+    } else {
         return false;
     }
 }
