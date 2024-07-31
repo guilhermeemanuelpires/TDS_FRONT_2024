@@ -28,3 +28,8 @@
     color: #FFFFFF;
     font-size: 50px;
 }
+
+#resultado{
+    text-transform: uppercase;
+    color: green;
+}
