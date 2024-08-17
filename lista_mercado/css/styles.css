@@ -1,0 +1,87 @@
+:root {
+    --color-primary: #50E3A4;
+    --color-primary-ofcouse: #46BE8B;
+    --color-tertiary: #F0EFE9;
+    --color-tertiary-black: #5f6271;
+    --color-secondary: #FFFFFF;
+    --color-line: #747F7F;
+    --color-danger: #FF4858;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-tertiary);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin-top: 12vh;
+    background-color: var(--color-secondary);
+    width: 50vh;
+    filter: drop-shadow(0px 6px 12px rgb(0, 0, 0, 0.5));
+}
+
+.card-area {
+    margin: 7vh;
+}
+
+.image-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-logo img {
+    height: 10vh;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-title h1 {
+    /* NA PROXIMA AULA VAMOS INCLUIR A FONTE */
+    color: var(--color-tertiary-black);
+    font-size: 3vh;
+    text-transform: uppercase;
+}
+
+.card-title-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-tertiary-black);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.card-content {
+    width: 100%;
+    margin-top: 1vh;
+    height: 40vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}   
+
+.card-content-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
